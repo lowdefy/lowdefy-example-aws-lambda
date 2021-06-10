@@ -1,0 +1,33 @@
+
+lowdefy: 3.17.0
+name: Lowdefy example AWS Lambda
+licence: MIT
+
+pages:
+  - id: welcome
+    type: PageHeaderMenu
+    properties:
+      title: Welcome
+    layout:
+      contentJustify: center
+    blocks:
+      - id: content_card
+        type: Card
+        style:
+          maxWidth: 800
+        layout:
+          contentGutter: 32
+        blocks:
+          - id: title
+            type: Title
+            properties:
+              content: AWS Lambda example
+          - id: image
+            type: Img
+            style:
+              textAlign: center
+            properties:
+              src: /public/lambda.png
+
+
+

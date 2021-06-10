@@ -1,0 +1,20 @@
+service: lowdefy-example-aws-lambda
+frameworkVersion: '2'
+provider:
+  name: aws
+  region: af-south-1
+  ecr:
+    images:
+      lowdefy:
+        path: .
+        file: Dockerfile
+
+functions:
+  lowdefy-server:
+    image: lowdefy
+    name: lowdefy-example-aws-lambda-${opt:stage}
+    # environment:
+    #   LOWDEFY_SECRET_MY_SECRET: ${env:LOWDEFY_SECRET_MY_SECRET}
+
+    events:
+      - httpApi: '*'
