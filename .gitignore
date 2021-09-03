@@ -1,3 +1,4 @@
 .lowdefy/**
 .serverless/**
 .env
+.DS_Store
