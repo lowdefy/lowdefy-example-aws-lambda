@@ -1,5 +1,4 @@
-
-lowdefy: 3.17.0
+lowdefy: 3.21.2
 name: Lowdefy example AWS Lambda
 licence: MIT
 
@@ -28,6 +27,3 @@ pages:
               textAlign: center
             properties:
               src: /public/lambda.png
-
-
-
